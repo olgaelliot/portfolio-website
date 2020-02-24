@@ -1,0 +1,106 @@
+:root {
+  --font-size-l: 24px;
+--font-size-m: 16px;
+--font-size-s: 12px;
+--line-height: 1.15em;
+  }
+
+* {
+padding: 0;
+margin: 0;
+}
+
+@font-face {
+    font-family: "Arial";
+    src: url("fonts/ArialNarrow.ttf");
+  }
+
+@font-face {
+  font-family: "Henry";
+  src: url("fonts/Henry-Regular.otf");
+}
+
+@font-face {
+  font-family: "Henry-italic";
+  src: url("fonts/Henry-Italic.otf");
+}
+
+body {
+  display: flex;
+  margin: 0;
+}
+
+.topbar {
+  position: fixed;
+  margin: 0 0 0 0;
+  width: 100%;
+  z-index: 1;
+  font-family: Arial;
+  font-size: 28px;
+}
+
+.topbar > ul > li {
+  list-style: none;
+  padding: 1em 2em 0 0;
+  float: right;
+}
+
+.content {
+  position: relative;
+  top: 35vh;
+  padding: 10px 10px 10px 10px;
+  font-family: Arial;
+  font-size: 22px;
+}
+
+h1 {
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 1px;
+}
+
+.left-column {
+  position: absolute;
+  width: 15vw;
+}
+
+.left-column > img {
+  width: 15vw;
+}
+
+.main-column {
+  width: 60vw;
+  position: relative;
+  left: 15vw;
+}
+
+.main-column {
+  font-family: Henry;
+  font-size: 44px;
+  line-height: 50px;
+  width: 60vw;
+  padding-left: 1em;
+}
+
+.italic {
+  font-family: Henry-italic;
+}
+
+#info {
+  position: fixed;
+  top: 2em;
+  visibility: hidden;
+}
+
+.education > li {
+  list-style: none;
+}
+
+a, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  }
