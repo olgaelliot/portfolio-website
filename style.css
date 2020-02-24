@@ -88,12 +88,16 @@ h1 {
 
 #info {
   position: fixed;
-  top: 2em;
+  left: 75%;
+  padding: 2em 1em 0 0;
   visibility: hidden;
+  padding: 4em 1em 0 2em;
 }
 
 .education > li {
   list-style: none;
+  font-family: Arial;
+  font-size: 22px;
 }
 
 a, a:visited {
