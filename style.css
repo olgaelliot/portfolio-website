@@ -34,7 +34,6 @@ body {
   position: fixed;
   margin: 0 0 0 0;
   width: 100%;
-  z-index: 1;
   font-family: Arial;
   font-size: 28px;
 }
@@ -43,6 +42,13 @@ body {
   list-style: none;
   padding: 1em 2em 0 0;
   float: right;
+  z-index: 2;
+}
+
+body > img {
+  height: 35vh;
+  z-index:1;
+  position: fixed;
 }
 
 .content {
@@ -62,6 +68,7 @@ h1 {
 .left-column {
   position: absolute;
   width: 15vw;
+  z-index: 3;
 }
 
 .left-column > img {
@@ -70,7 +77,7 @@ h1 {
 
 .main-column {
   width: 60vw;
-  position: relative;
+  position: absolute;
   left: 15vw;
 }
 
@@ -107,4 +114,8 @@ a, a:visited {
 
 a:hover {
   color: green;
+  }
+
+  .project-com {
+    display: inline-flex;
   }
